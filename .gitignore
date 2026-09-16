@@ -1,0 +1,4 @@
+# notas pessoais da workspace (não vão pro repo público)
+CLAUDE.md
+__pycache__/
+*.tmp

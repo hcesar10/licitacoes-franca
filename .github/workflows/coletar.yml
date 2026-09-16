@@ -1,0 +1,44 @@
+name: Coletar licitações
+
+on:
+  schedule:
+    - cron: "0 10 * * *"   # 07h Brasília
+    - cron: "0 21 * * *"   # 18h Brasília
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "Quantos dias de publicação buscar (1 a 90)"
+        required: true
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Coletar PNCP
+        env:
+          DIAS: ${{ inputs.dias || '3' }}
+        run: python3 scripts/coletar.py --dias "$DIAS"
+
+      - name: Commit dos dados
+        run: |
+          if git diff --quiet -- docs/data/licitacoes.json && ! git ls-files --others --exclude-standard | grep -q licitacoes.json; then
+            echo "Sem mudanças."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/licitacoes.json
+          git commit -m "dados: coleta PNCP $(TZ=America/Sao_Paulo date '+%Y-%m-%d %H:%M')"
+          git pull --rebase
+          git push

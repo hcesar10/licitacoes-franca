@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Licitações Franca e região</title>
+  <meta name="description" content="Painel independente com dispensas e pregões eletrônicos de Franca-SP e cidades vizinhas, a partir do PNCP.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="wrap topo-in">
+      <div class="topo-texto">
+        <p class="selo">Painel independente · dados do PNCP</p>
+        <h1>Licitações de Franca e região</h1>
+        <p class="sub">Dispensas e pregões eletrônicos de Franca, Cristais Paulista, Claraval, Restinga, Patrocínio Paulista, Itirapuã, Ibiraci e Ribeirão Corrente.</p>
+      </div>
+      <button id="btn-info" class="btn btn-info" type="button" aria-haspopup="dialog">
+        <span aria-hidden="true">ℹ️</span> Como dar o primeiro lance
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="acao">
+      <button id="btn-carregar" class="btn btn-primario btn-grande" type="button">Mostrar licitações</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="painel" hidden>
+      <div class="filtros">
+        <div class="grupo">
+          <span class="rotulo" id="rotulo-municipios">Município</span>
+          <div id="chips" class="chips" role="group" aria-labelledby="rotulo-municipios"></div>
+        </div>
+        <div class="campos">
+          <label class="campo campo-busca">
+            <span class="rotulo">Buscar no objeto ou órgão</span>
+            <input type="search" id="f-texto" placeholder="ex.: toner, cadeira, merenda" autocomplete="off">
+          </label>
+          <label class="campo">
+            <span class="rotulo">Modalidade</span>
+            <select id="f-modalidade">
+              <option value="">Todas</option>
+              <option value="8">Dispensa</option>
+              <option value="6">Pregão eletrônico</option>
+            </select>
+          </label>
+          <label class="campo">
+            <span class="rotulo">Valor estimado</span>
+            <select id="f-valor">
+              <option value="">Qualquer valor</option>
+              <option value="65492.11">Até R$ 65.492,11 (limite da dispensa)</option>
+              <option value="10000">Até R$ 10 mil</option>
+              <option value="3000">Até R$ 3 mil</option>
+            </select>
+          </label>
+          <label class="campo">
+            <span class="rotulo">Ordenar por</span>
+            <select id="f-ordem">
+              <option value="encerra">Encerra primeiro</option>
+              <option value="recentes">Publicadas por último</option>
+              <option value="valor">Maior valor</option>
+            </select>
+          </label>
+          <label class="check">
+            <input type="checkbox" id="f-abertas" checked>
+            <span>Só com proposta aberta</span>
+          </label>
+        </div>
+      </div>
+
+      <p id="resumo" class="resumo"></p>
+      <p id="aviso-vazios" class="aviso" hidden></p>
+      <ul id="lista" class="lista"></ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap">
+      <p><strong>Painel independente</strong>, sem vínculo com prefeituras ou com o governo. Fonte: <a href="https://pncp.gov.br" target="_blank" rel="noopener">Portal Nacional de Contratações Públicas (PNCP)</a>. Coleta automática 2 vezes por dia. Sempre confira o edital oficial antes de participar.</p>
+      <p class="rodape-links">
+        <a href="https://github.com/hcesar10/licitacoes-franca/actions/workflows/coletar.yml" target="_blank" rel="noopener">Atualizar dados agora</a> <span class="nota">(botão “Run workflow”, só para o dono do repositório)</span>
+        · <a href="https://github.com/hcesar10/licitacoes-franca" target="_blank" rel="noopener">Código</a>
+      </p>
+    </div>
+  </footer>
+
+  <dialog id="modal" class="modal" aria-labelledby="modal-titulo">
+    <div class="modal-caixa">
+      <header class="modal-topo">
+        <div>
+          <p class="selo">Guia prático</p>
+          <h2 id="modal-titulo">Como dar o primeiro lance</h2>
+        </div>
+        <button type="button" class="btn-fechar" data-fechar aria-label="Fechar">✕</button>
+      </header>
+
+      <nav class="passos-nav" aria-label="Passos">
+        <ol id="passos-pontos" class="pontos"></ol>
+      </nav>
+
+      <div class="modal-corpo" id="modal-corpo" tabindex="-1">
+        <section class="passo" data-titulo="Base">
+          <p class="passo-num">Passo 1 de 9</p>
+          <h3>Monte a base: CNPJ e caixa</h3>
+          <ul>
+            <li>Você precisa de <strong>CNPJ ativo</strong> com atividade (CNAE) que cubra o que vai vender. O órgão confere isso na habilitação.</li>
+            <li>MEI, ME e EPP podem participar. Os benefícios de micro e pequena empresa (LC 123/2006: empate ficto, cotas, prazo extra para regularizar certidões) fazem diferença para quem começa. <strong>Confirme enquadramento e regime tributário com um contador.</strong></li>
+            <li><strong>Separe caixa.</strong> Você compra, entrega e só depois recebe, e o pagamento costuma levar 30 dias ou mais após o aceite.</li>
+          </ul>
+        </section>
+
+        <section class="passo" data-titulo="Acessos" hidden>
+          <p class="passo-num">Passo 2 de 9</p>
+          <h3>Acessos digitais</h3>
+          <ul>
+            <li><strong>Conta gov.br</strong> (grátis): o Compras.gov.br e o SICAF usam login gov.br. Deixe a conta em nível <strong>Prata ou Ouro</strong> (validando pelo app do banco ou por biometria) para não travar no acesso. <a href="https://www.gov.br/governodigital/pt-br/conta-gov-br" target="_blank" rel="noopener">Conta gov.br ↗</a></li>
+            <li><strong>Certificado digital ICP-Brasil</strong>: o SICAF exige e-CNPJ ou e-CPF para acessar o sistema (<a href="https://www.gov.br/compras/pt-br/acesso-a-informacao/perguntas-frequentes/sicaf-sistema/sicaf-sistema" target="_blank" rel="noopener">FAQ oficial ↗</a>). Um e-CNPJ A1 custa cerca de R$ 220 a R$ 275 por ano.</li>
+          </ul>
+        </section>
+
+        <section class="passo" data-titulo="Certidões" hidden>
+          <p class="passo-num">Passo 3 de 9</p>
+          <h3>Certidões em dia (todas grátis)</h3>
+          <ul>
+            <li><strong>Federal</strong> (Receita + PGFN)</li>
+            <li><strong>FGTS</strong> (CRF, na Caixa)</li>
+            <li><strong>Trabalhista</strong> (CNDT, no TST)</li>
+            <li><strong>Estadual</strong> e <strong>municipal</strong> (da sua cidade)</li>
+          </ul>
+          <p class="alerta"><strong>Atenção:</strong> o CRF do FGTS vale só cerca de 30 dias e é o motivo nº 1 de fornecedor barrado na hora da disputa. Emita de novo antes de cada participação.</p>
+        </section>
+
+        <section class="passo" data-titulo="Portais" hidden>
+          <p class="passo-num">Passo 4 de 9</p>
+          <h3>Cadastre-se nos portais</h3>
+          <p>Não existe cadastro único: cada portal é um cadastro separado. Comece pelo que os órgãos daqui usam.</p>
+          <ul>
+            <li><strong>Portal de Compras Públicas</strong>: onde a Prefeitura de Franca faz pregões e dispensas eletrônicas (<a href="https://portaldecompraspublicas.com.br/processos?uf=100135&amp;orgao=Prefeitura+Municipal+de+Franca" target="_blank" rel="noopener">processos de Franca ↗</a>). No cadastro você escolhe pessoa jurídica, preenche os dados da empresa e envia documentos (cartão CNPJ, contrato social, certidões). A equipe do portal valida. O portal cobra uma taxa pelo uso da plataforma: confira o valor atual antes de disputar. <a href="https://ajuda.portaldecompraspublicas.com.br/hc/pt-br" target="_blank" rel="noopener">Central de ajuda ↗</a> · <a href="https://portalcpstorage.s3-sa-east-1.amazonaws.com/files/Manuais/ManualFornecedorEletronicoVersao170.pdf" target="_blank" rel="noopener">Manual do fornecedor (PDF) ↗</a></li>
+            <li><strong>Compras.gov.br + SICAF</strong>: órgãos federais e municípios que aderiram. Com o <strong>nível I (credenciamento)</strong> do SICAF você já pode participar de pregões e dispensas eletrônicas; os demais níveis (regularidade fiscal etc.) entram na habilitação. <a href="https://www.gov.br/compras/pt-br/acesso-a-informacao/perguntas-frequentes/sicaf-sistema/sicaf-sistema" target="_blank" rel="noopener">FAQ do SICAF ↗</a></li>
+            <li><strong>BEC-SP</strong>: órgãos do Estado de São Paulo (cadastro CAUFESP). <a href="https://www.bec.sp.gov.br" target="_blank" rel="noopener">bec.sp.gov.br ↗</a></li>
+          </ul>
+        </section>
+
+        <section class="passo" data-titulo="Escolher" hidden>
+          <p class="passo-num">Passo 5 de 9</p>
+          <h3>Escolha a primeira disputa</h3>
+          <ul>
+            <li><strong>Comece por dispensa</strong> (até R$ 65.492,11 em compras e serviços). O prazo é curto (mínimo de 3 dias úteis), pede menos documento e não tem fase de recurso longa.</li>
+            <li>Neste painel, filtre <em>Dispensa</em> + <em>até o limite da dispensa</em>. A Uni-FACEF costuma comprar itens pequenos e avulsos, um bom primeiro degrau.</li>
+            <li><strong>Leia o edital ou termo de referência inteiro</strong>: especificação, prazo e local de entrega, amostra, garantia.</li>
+            <li>Clique em <em>Ver itens</em> e <strong>confira a unidade</strong>. Caixa com 12 não é unidade. É a armadilha clássica.</li>
+          </ul>
+        </section>
+
+        <section class="passo" data-titulo="Preço" hidden>
+          <p class="passo-num">Passo 6 de 9</p>
+          <h3>Calcule seu preço mínimo</h3>
+          <div class="formula" aria-label="Fórmula do preço mínimo">
+            <span>Produto</span><b>+</b><span>Frete até o órgão</span><b>+</b><span>Taxa do portal</span><b>+</b><span>Impostos</span><b>+</b><span>Margem</span><b>=</b><span class="formula-total">Seu lance mínimo</span>
+          </div>
+          <ul>
+            <li><strong>O frete é seu</strong>: a entrega é no local do órgão, já embutida no preço.</li>
+            <li><strong>Taxa do portal</strong>: por exemplo, a BLL cobra 1,5% do lote arrematado (teto de R$ 600), só de quem vence. Veja a do portal da disputa.</li>
+            <li>Cote com o fornecedor <strong>antes</strong> e confirme o prazo de entrega por escrito.</li>
+            <li>Desconfie de “margem média de mercado” na internet: quase tudo vem de quem vende curso ou software.</li>
+            <li><strong>Decida o mínimo antes da disputa</strong> e não desça dele no calor dos lances.</li>
+          </ul>
+        </section>
+
+        <section class="passo" data-titulo="Lance" hidden>
+          <p class="passo-num">Passo 7 de 9</p>
+          <h3>Envie a proposta e dê o lance</h3>
+          <h4>Dispensa eletrônica</h4>
+          <ul>
+            <li>Leia o <strong>aviso de dispensa</strong>: ele traz data e horário da disputa. A fase de lances começa no mínimo 3 dias úteis após a publicação.</li>
+            <li>Cadastre sua proposta para cada item que quer disputar. No horário marcado, o sistema abre a <strong>fase de lances</strong>, que fica aberta por algumas horas (no Compras.gov.br, pela IN SEGES/ME 67/2021, pelo menos 6 horas).</li>
+            <li>Ao fim, o órgão analisa a melhor oferta e pede os documentos de habilitação do vencedor. <a href="https://www.gov.br/compras/pt-br/acesso-a-informacao/manuais/manual-fase-externa/dispensa-eletronica/ManualNovoDispensaEletrnica28.01.2022.pdf" target="_blank" rel="noopener">Manual oficial da dispensa eletrônica (PDF) ↗</a></li>
+          </ul>
+          <h4>Pregão eletrônico</h4>
+          <ol class="etapas">
+            <li><strong>Proposta inicial</strong> até o horário de abertura.</li>
+            <li><strong>Sessão pública</strong> abre na data marcada.</li>
+            <li><strong>Fase de lances</strong>: você vê os valores dos concorrentes, mas não quem são.</li>
+            <li><strong>Negociação</strong>: o pregoeiro pode pedir desconto ao melhor colocado.</li>
+            <li><strong>Habilitação</strong>: você envia os documentos e a proposta ajustada.</li>
+          </ol>
+          <p class="alerta"><strong>Confira o valor antes de confirmar.</strong> Lance digitado errado nem sempre pode ser desfeito.</p>
+          <p class="dica">Depois do encerramento, a ata e os lances ficam públicos (com nome) no portal da disputa. É o melhor lugar para estudar preços reais.</p>
+        </section>
+
+        <section class="passo" data-titulo="Ganhou" hidden>
+          <p class="passo-num">Passo 8 de 9</p>
+          <h3>Ganhou? Agora começa</h3>
+          <ol class="linha-tempo">
+            <li>Homologação</li>
+            <li>Empenho</li>
+            <li>Entrega</li>
+            <li>Recebimento provisório</li>
+            <li>Recebimento definitivo</li>
+            <li>Liquidação</li>
+            <li>Pagamento (~30 dias)</li>
+          </ol>
+          <ul>
+            <li><strong>Só entregue depois do empenho</strong>, e confirme que ele existe no portal oficial do órgão.</li>
+            <li>Produto fora da especificação é recusado, e o pagamento fica parado até você trocar, por sua conta.</li>
+          </ul>
+          <p class="alerta"><strong>Golpe do falso empenho:</strong> alguém se passa pelo órgão e pede entrega antecipada por e-mail ou WhatsApp. Na dúvida, ligue para o telefone oficial do órgão.</p>
+        </section>
+
+        <section class="passo" data-titulo="Nunca" hidden>
+          <p class="passo-num">Passo 9 de 9</p>
+          <h3>O que nunca fazer</h3>
+          <ul>
+            <li><strong>Combinar com concorrentes quem vai ganhar.</strong> É crime (art. 337-F do Código Penal, 4 a 8 anos de prisão). Saia de qualquer grupo que proponha isso.</li>
+            <li><strong>Ganhar e não entregar.</strong> Dá multa, impedimento de licitar por até 3 anos ou declaração de inidoneidade de 3 a 6 anos <em>em todo o país</em> (arts. 155 e 156 da Lei 14.133/2021), com o nome publicado no CEIS/CNEP.</li>
+            <li><strong>Cair em curso de “faturamento garantido”.</strong> O nicho tem muitas reclamações registradas.</li>
+          </ul>
+        </section>
+      </div>
+
+      <footer class="modal-rodape">
+        <button type="button" class="btn btn-secundario" id="passo-anterior">← Anterior</button>
+        <button type="button" class="btn btn-primario" id="passo-proximo">Próximo →</button>
+      </footer>
+      <p class="modal-aviso">Conteúdo informativo, revisado em setembro de 2026, com base na Lei 14.133/2021 e no Decreto 12.807/2025 (limites da dispensa). Não é consultoria jurídica ou contábil.</p>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
