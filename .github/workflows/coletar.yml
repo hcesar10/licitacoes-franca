@@ -9,7 +9,7 @@ on:
       dias:
         description: "Quantos dias de publicação buscar (1 a 90)"
         required: true
-        default: "3"
+        default: "2"
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ jobs:
 
       - name: Coletar PNCP
         env:
-          DIAS: ${{ inputs.dias || '3' }}
+          DIAS: ${{ inputs.dias || '2' }}
         run: python3 scripts/coletar.py --dias "$DIAS"
 
       - name: Commit dos dados
