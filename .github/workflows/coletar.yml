@@ -31,6 +31,8 @@ jobs:
         run: python3 scripts/coletar.py --dias "$DIAS"
 
       - name: Commit dos dados
+        # Roda mesmo se a coleta falhar no meio: o que já foi gravado é dado bom.
+        if: always()
         run: |
           if git diff --quiet -- docs/data/licitacoes.json && ! git ls-files --others --exclude-standard | grep -q licitacoes.json; then
             echo "Sem mudanças."

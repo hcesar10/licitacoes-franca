@@ -95,8 +95,10 @@ function mostrarStatus() {
   const status = $("#status");
   if (!atualizado) { status.textContent = ""; return; }
   const horas = (Date.now() - atualizado) / 36e5;
+  const falhas = estado.dados.ultimaColeta?.falhas?.length || 0;
   status.innerHTML = `Dados atualizados em <strong>${esc(dataHora.format(atualizado))}</strong>` +
-    (horas > HORAS_DADO_VELHO ? ` · <span class="velho">podem estar desatualizados</span>` : "");
+    (horas > HORAS_DADO_VELHO ? ` · <span class="velho">podem estar desatualizados</span>` : "") +
+    (falhas ? ` · <span class="velho">${falhas} trecho(s) da última coleta falharam no PNCP</span>` : "");
 }
 
 /* ---------- filtros e renderização ---------- */
