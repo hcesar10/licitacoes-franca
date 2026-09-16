@@ -16,7 +16,8 @@ const dataHora = new Intl.DateTimeFormat("pt-BR", {
 
 const estado = {
   dados: null,
-  selecionados: new Set([FRANCA]),
+  // Começa vazio: no primeiro carregamento marca todas as cidades (ver carregar()).
+  selecionados: new Set(),
 };
 
 /* ---------- utilidades ---------- */
@@ -78,6 +79,9 @@ async function carregar() {
     const resp = await fetch(`${DADOS_URL}?t=${Date.now()}`, { cache: "no-store" });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     estado.dados = await resp.json();
+    if (!estado.selecionados.size) {
+      estado.selecionados = new Set(estado.dados.municipios.map((m) => m.ibge));
+    }
     mostrarStatus();
     $("#painel").hidden = false;
     btn.textContent = "Recarregar";
