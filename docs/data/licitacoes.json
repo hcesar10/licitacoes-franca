@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-09-17T11:47:17-03:00",
+ "atualizadoEm": "2026-09-17T20:17:08-03:00",
  "ultimaColeta": {
   "de": "20260915",
   "ate": "20260917",
@@ -7,8 +7,13 @@
    6,
    8
   ],
-  "encontrados": 31,
-  "falhas": []
+  "encontrados": 0,
+  "falhas": [
+   "MG mod 6 20260915-20260917: parou na página 8/15 (falhou após 5 tentativas (HTTP 500): https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20260915&dataFinal=20260917&codigoModalidadeContratacao=6&uf=MG&pagina=8&tamanhoPagina=50)",
+   "MG mod 8 20260915-20260917: parou na página 2/13 (falhou após 5 tentativas (HTTP 500): https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20260915&dataFinal=20260917&codigoModalidadeContratacao=8&uf=MG&pagina=2&tamanhoPagina=50)",
+   "SP mod 6 20260915-20260917: parou na página 3/21 (falhou após 5 tentativas (HTTP 500): https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20260915&dataFinal=20260917&codigoModalidadeContratacao=6&uf=SP&pagina=3&tamanhoPagina=50)",
+   "SP mod 8 20260915-20260917: parou na página 1/1 (falhou após 5 tentativas (HTTP 500): https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20260915&dataFinal=20260917&codigoModalidadeContratacao=8&uf=SP&pagina=1&tamanhoPagina=50)"
+  ]
  },
  "retencaoDias": 30,
  "municipios": [
