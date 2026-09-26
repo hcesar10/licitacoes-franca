@@ -1,13 +1,13 @@
 {
- "atualizadoEm": "2026-09-25T20:43:04-03:00",
+ "atualizadoEm": "2026-09-26T11:15:39-03:00",
  "ultimaColeta": {
-  "de": "20260923",
-  "ate": "20260925",
+  "de": "20260924",
+  "ate": "20260926",
   "modalidades": [
    6,
    8
   ],
-  "encontrados": 26,
+  "encontrados": 18,
   "falhas": []
  },
  "retencaoDias": 30,
