@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-10-05T16:08:59-03:00",
+ "atualizadoEm": "2026-10-05T22:36:40-03:00",
  "ultimaColeta": {
   "de": "20261003",
   "ate": "20261005",
@@ -7,7 +7,7 @@
    6,
    8
   ],
-  "encontrados": 3,
+  "encontrados": 4,
   "falhas": []
  },
  "retencaoDias": 30,
@@ -16,7 +16,7 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 146
+   "total": 147
   },
   {
    "nome": "Cristais Paulista",
@@ -62,6 +62,34 @@
   }
  ],
  "licitacoes": [
+  {
+   "id": "47987136000109-1-000373/2026",
+   "municipio": "Franca",
+   "ibge": "3516200",
+   "uf": "SP",
+   "orgao": "CENTRO UNIVERSITARIO MUNICIPAL DE FRANCA",
+   "cnpj": "47987136000109",
+   "unidade": "CENTRO UNIVERSITARIO DE FRANCA",
+   "objeto": "CONTRATAÇÃO DE ADESIVOS PARA OS LOGOS DAS EMPRESAS EM PRÉ-TESTE DE CAMPANHA DO CURSO DE COMUNICAÇÃO SOCIAL",
+   "modalidade": "Dispensa",
+   "modalidadeId": 8,
+   "modoDisputa": "Dispensa Com Disputa",
+   "numeroCompra": "00279",
+   "processo": "00384/2026",
+   "valorEstimado": 540.0,
+   "valorHomologado": null,
+   "publicacao": "2026-10-05T18:08:56",
+   "abertura": "2026-10-05T17:57:37",
+   "encerramento": "2026-10-08T16:00:38",
+   "atualizacao": "2026-10-05T18:08:56",
+   "situacao": "Divulgada no PNCP",
+   "srp": false,
+   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
+   "linkOrigem": null,
+   "urlPncp": "https://pncp.gov.br/app/editais/47987136000109/2026/373",
+   "ano": 2026,
+   "sequencial": 373
+  },
   {
    "id": "47987136000109-1-000372/2026",
    "municipio": "Franca",
