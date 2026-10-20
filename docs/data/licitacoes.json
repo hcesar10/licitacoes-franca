@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-10-19T13:52:14-03:00",
+ "atualizadoEm": "2026-10-19T21:02:48-03:00",
  "ultimaColeta": {
   "de": "20261017",
   "ate": "20261019",
@@ -7,7 +7,7 @@
    6,
    8
   ],
-  "encontrados": 5,
+  "encontrados": 7,
   "falhas": []
  },
  "retencaoDias": 30,
@@ -16,7 +16,7 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 161
+   "total": 163
   },
   {
    "nome": "Cristais Paulista",
@@ -62,6 +62,62 @@
   }
  ],
  "licitacoes": [
+  {
+   "id": "48031918000124-1-002945/2026",
+   "municipio": "Franca",
+   "ibge": "3516200",
+   "uf": "SP",
+   "orgao": "UNIVERSIDADE ESTADUAL PAULISTA JULIO DE MESQUITA FILHO",
+   "cnpj": "48031918000124",
+   "unidade": "ESP-UNESP-FACUL.CIEN.HUMANAS E SOCIAIS-FRANCA",
+   "objeto": "Contratação de Serviços gráficos para utilização pela Seção Técnica de Saúde e Núcleo Técnico de Apoio ao Estudante da Universidade Estadual Paulista \"Júlio de Mesquita Filho\"- Faculdade de Ciências Humanas e Sociais - Unesp Campus de Franca",
+   "modalidade": "Dispensa",
+   "modalidadeId": 8,
+   "modoDisputa": "Não se aplica",
+   "numeroCompra": "217",
+   "processo": "461/2026-CF",
+   "valorEstimado": 335.0,
+   "valorHomologado": 335.0,
+   "publicacao": "2026-10-19T17:12:51",
+   "abertura": null,
+   "encerramento": null,
+   "atualizacao": "2026-10-19T17:12:51",
+   "situacao": "Divulgada no PNCP",
+   "srp": false,
+   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
+   "linkOrigem": null,
+   "urlPncp": "https://pncp.gov.br/app/editais/48031918000124/2026/2945",
+   "ano": 2026,
+   "sequencial": 2945
+  },
+  {
+   "id": "47970769000104-1-000518/2026",
+   "municipio": "Franca",
+   "ibge": "3516200",
+   "uf": "SP",
+   "orgao": "MUNICIPIO DE FRANCA",
+   "cnpj": "47970769000104",
+   "unidade": "SECRETARIA MUN. DE AÇÃO SOCIAL",
+   "objeto": "CONTRATAÇÃO DE SERVIÇO DE CAPACITAÇÃO DE EQUIPE DE PROFISSIONAIS DO SUAS.",
+   "modalidade": "Dispensa",
+   "modalidadeId": 8,
+   "modoDisputa": "Não se aplica",
+   "numeroCompra": "00118",
+   "processo": "33335/2026",
+   "valorEstimado": 76462.6,
+   "valorHomologado": null,
+   "publicacao": "2026-10-19T14:55:41",
+   "abertura": null,
+   "encerramento": null,
+   "atualizacao": "2026-10-19T14:55:41",
+   "situacao": "Divulgada no PNCP",
+   "srp": false,
+   "amparoLegal": "Lei 14.133/2021, Art. 75, XV",
+   "linkOrigem": null,
+   "urlPncp": "https://pncp.gov.br/app/editais/47970769000104/2026/518",
+   "ano": 2026,
+   "sequencial": 518
+  },
   {
    "id": "50486778000120-1-000012/2026",
    "municipio": "Patrocínio Paulista",
