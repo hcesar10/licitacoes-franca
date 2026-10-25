@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-10-25T11:11:13-03:00",
+ "atualizadoEm": "2026-10-25T19:56:30-03:00",
  "ultimaColeta": {
   "de": "20261023",
   "ate": "20261025",
@@ -34,7 +34,7 @@
    "nome": "Restinga",
    "ibge": "3542701",
    "uf": "SP",
-   "total": 14
+   "total": 13
   },
   {
    "nome": "Patrocínio Paulista",
@@ -6781,34 +6781,6 @@
    "urlPncp": "https://pncp.gov.br/app/editais/46374500000194/2026/7393",
    "ano": 2026,
    "sequencial": 7393
-  },
-  {
-   "id": "45318581000142-1-000078/2026",
-   "municipio": "Restinga",
-   "ibge": "3542701",
-   "uf": "SP",
-   "orgao": "MUNICIPIO DE RESTINGA",
-   "cnpj": "45318581000142",
-   "unidade": "ASSISTENCIA SOCIAL",
-   "objeto": "PREGÃO ELETRÔNICO PARA FORMAÇÃO DE REGISTRO DE PREÇOS PARA AQUISIÇÃO DE PERNIL DE PORCO E FRANGO INTEIRO CONGELADOS PARA DISTRIBUIÇÃO GRATUITA A FAMÍLIAS EM ESTADO DE VULNERABILIDADE SOCIAL, COM PARTICIPAÇÃO EXCLUSIVA PARA ME E EPP, CONFORME CONDIÇÕES, QUANTIDADES E EXIGÊNCIAS ESTABELECIDAS NESTE EDITAL E SEUS ANEXOS.",
-   "modalidade": "Pregão - Eletrônico",
-   "modalidadeId": 6,
-   "modoDisputa": "Aberto",
-   "numeroCompra": "00056",
-   "processo": "00079/2026",
-   "valorEstimado": 10262.5,
-   "valorHomologado": null,
-   "publicacao": "2026-09-03T14:14:58",
-   "abertura": "2026-09-09T08:00:27",
-   "encerramento": "2026-09-25T12:30:39",
-   "atualizacao": "2026-09-03T14:16:39",
-   "situacao": "Divulgada no PNCP",
-   "srp": true,
-   "amparoLegal": "Lei 14.133/2021, Art. 28, I",
-   "linkOrigem": "https://bll.org.br/",
-   "urlPncp": "https://pncp.gov.br/app/editais/45318581000142/2026/78",
-   "ano": 2026,
-   "sequencial": 78
   }
  ]
 }
