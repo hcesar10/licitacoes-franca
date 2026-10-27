@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-10-26T13:39:58-03:00",
+ "atualizadoEm": "2026-10-26T21:08:29-03:00",
  "ultimaColeta": {
   "de": "20261024",
   "ate": "20261026",
@@ -7,7 +7,7 @@
    6,
    8
   ],
-  "encontrados": 7,
+  "encontrados": 9,
   "falhas": []
  },
  "retencaoDias": 30,
@@ -34,7 +34,7 @@
    "nome": "Restinga",
    "ibge": "3542701",
    "uf": "SP",
-   "total": 13
+   "total": 15
   },
   {
    "nome": "Patrocínio Paulista",
@@ -62,6 +62,62 @@
   }
  ],
  "licitacoes": [
+  {
+   "id": "45318581000142-1-000095/2026",
+   "municipio": "Restinga",
+   "ibge": "3542701",
+   "uf": "SP",
+   "orgao": "MUNICIPIO DE RESTINGA",
+   "cnpj": "45318581000142",
+   "unidade": "EDUCAÇÃO E CULTURA",
+   "objeto": "PREGÃO ELETRÔNICO PARA FORMAÇÃO DE REGISTRO DE PREÇOS, DESTINADO À AQUISIÇÃO FUTURA E EVENTUAL DE DETERGENTE LÍQUIDO E PAPEL HIGIÊNICO PARA A PREFEITURA MUNICIPAL, COM COTA RESERVADA PARA ME E EPP, PELO PERÍODO DE 12 (DOZE) MESES, CONFORME CONDIÇÕES, QUANTIDADES E EXIGÊNCIAS ESTABELECIDAS NESTE EDITAL E SEUS ANEXOS.",
+   "modalidade": "Pregão - Eletrônico",
+   "modalidadeId": 6,
+   "modoDisputa": "Aberto",
+   "numeroCompra": "00070",
+   "processo": "00096/2026",
+   "valorEstimado": 439300.0,
+   "valorHomologado": null,
+   "publicacao": "2026-10-26T14:50:28",
+   "abertura": "2026-10-27T08:00:20",
+   "encerramento": "2026-11-16T12:30:49",
+   "atualizacao": "2026-10-26T14:50:47",
+   "situacao": "Divulgada no PNCP",
+   "srp": true,
+   "amparoLegal": "Lei 14.133/2021, Art. 28, I",
+   "linkOrigem": "https://bll.org.br/",
+   "urlPncp": "https://pncp.gov.br/app/editais/45318581000142/2026/95",
+   "ano": 2026,
+   "sequencial": 95
+  },
+  {
+   "id": "45318581000142-1-000094/2026",
+   "municipio": "Restinga",
+   "ibge": "3542701",
+   "uf": "SP",
+   "orgao": "MUNICIPIO DE RESTINGA",
+   "cnpj": "45318581000142",
+   "unidade": "ADMINISTRAÇÃO",
+   "objeto": "REGISTRO DE PREÇOS VISANDO À CONTRATAÇÃO DE EMPRESA ESPECIALIZADA EM SERVIÇOS DE BORRACHARIA, PARA OS VEÍCULOS PERTENCENTES À FROTA DO MUNICÍPIO CONFORME CONDIÇÕES, QUANTIDADES E EXIGÊNCIAS ESTABELECIDAS NESTE EDITAL E SEUS ANEXOS.",
+   "modalidade": "Pregão - Eletrônico",
+   "modalidadeId": 6,
+   "modoDisputa": "Aberto",
+   "numeroCompra": "00066",
+   "processo": "00089/2026",
+   "valorEstimado": 144230.0,
+   "valorHomologado": null,
+   "publicacao": "2026-10-26T14:21:03",
+   "abertura": "2026-10-27T08:00:17",
+   "encerramento": "2026-11-13T12:30:33",
+   "atualizacao": "2026-10-26T14:22:14",
+   "situacao": "Divulgada no PNCP",
+   "srp": true,
+   "amparoLegal": "Lei 14.133/2021, Art. 28, I",
+   "linkOrigem": "https://bll.org.br/",
+   "urlPncp": "https://pncp.gov.br/app/editais/45318581000142/2026/94",
+   "ano": 2026,
+   "sequencial": 94
+  },
   {
    "id": "46374500000194-1-008959/2026",
    "municipio": "Franca",
