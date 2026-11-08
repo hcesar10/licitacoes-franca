@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-11-07T13:11:50-03:00",
+ "atualizadoEm": "2026-11-07T21:05:42-03:00",
  "ultimaColeta": {
   "de": "20261105",
   "ate": "20261107",
@@ -16,7 +16,7 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 155
+   "total": 153
   },
   {
    "nome": "Cristais Paulista",
@@ -4683,34 +4683,6 @@
    "sequencial": 381
   },
   {
-   "id": "47987136000109-1-000379/2026",
-   "municipio": "Franca",
-   "ibge": "3516200",
-   "uf": "SP",
-   "orgao": "CENTRO UNIVERSITARIO MUNICIPAL DE FRANCA",
-   "cnpj": "47987136000109",
-   "unidade": "CENTRO UNIVERSITARIO DE FRANCA",
-   "objeto": "CONTRATAÇÃO DE SERVIÇO DE MARCAS E PATENTES PARA ENVIO DE NOTIFICAÇÃO EXTRAJUDICIAL, POR COLIDÊNCIA COM A MARCA “FACEF”.",
-   "modalidade": "Dispensa",
-   "modalidadeId": 8,
-   "modoDisputa": "Não se aplica",
-   "numeroCompra": "00281",
-   "processo": "00386/2026",
-   "valorEstimado": 1150.0,
-   "valorHomologado": null,
-   "publicacao": "2026-10-08T13:45:23",
-   "abertura": null,
-   "encerramento": null,
-   "atualizacao": "2026-10-08T13:45:23",
-   "situacao": "Divulgada no PNCP",
-   "srp": false,
-   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
-   "linkOrigem": null,
-   "urlPncp": "https://pncp.gov.br/app/editais/47987136000109/2026/379",
-   "ano": 2026,
-   "sequencial": 379
-  },
-  {
    "id": "45318789000161-1-000029/2026",
    "municipio": "Ribeirão Corrente",
    "ibge": "3543105",
@@ -5297,34 +5269,6 @@
    "urlPncp": "https://pncp.gov.br/app/editais/46374500000194/2026/8344",
    "ano": 2026,
    "sequencial": 8344
-  },
-  {
-   "id": "47987136000109-1-000373/2026",
-   "municipio": "Franca",
-   "ibge": "3516200",
-   "uf": "SP",
-   "orgao": "CENTRO UNIVERSITARIO MUNICIPAL DE FRANCA",
-   "cnpj": "47987136000109",
-   "unidade": "CENTRO UNIVERSITARIO DE FRANCA",
-   "objeto": "CONTRATAÇÃO DE ADESIVOS PARA OS LOGOS DAS EMPRESAS EM PRÉ-TESTE DE CAMPANHA DO CURSO DE COMUNICAÇÃO SOCIAL",
-   "modalidade": "Dispensa",
-   "modalidadeId": 8,
-   "modoDisputa": "Dispensa Com Disputa",
-   "numeroCompra": "00279",
-   "processo": "00384/2026",
-   "valorEstimado": 540.0,
-   "valorHomologado": null,
-   "publicacao": "2026-10-05T18:08:56",
-   "abertura": "2026-10-05T17:57:37",
-   "encerramento": "2026-10-08T16:00:38",
-   "atualizacao": "2026-10-05T18:08:56",
-   "situacao": "Divulgada no PNCP",
-   "srp": false,
-   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
-   "linkOrigem": null,
-   "urlPncp": "https://pncp.gov.br/app/editais/47987136000109/2026/373",
-   "ano": 2026,
-   "sequencial": 373
   },
   {
    "id": "47970769000104-1-000489/2026",
