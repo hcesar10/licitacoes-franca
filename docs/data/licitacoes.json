@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-11-12T15:00:18-03:00",
+ "atualizadoEm": "2026-11-12T22:34:57-03:00",
  "ultimaColeta": {
   "de": "20261110",
   "ate": "20261112",
@@ -7,7 +7,7 @@
    6,
    8
   ],
-  "encontrados": 35,
+  "encontrados": 36,
   "falhas": []
  },
  "retencaoDias": 30,
@@ -16,7 +16,7 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 172
+   "total": 171
   },
   {
    "nome": "Cristais Paulista",
@@ -52,7 +52,7 @@
    "nome": "Ibiraci",
    "ibge": "3129707",
    "uf": "MG",
-   "total": 6
+   "total": 7
   },
   {
    "nome": "Ribeirão Corrente",
@@ -62,6 +62,34 @@
   }
  ],
  "licitacoes": [
+  {
+   "id": "17894072000122-1-000058/2026",
+   "municipio": "Ibiraci",
+   "ibge": "3129707",
+   "uf": "MG",
+   "orgao": "MUNICIPIO DE IBIRACI",
+   "cnpj": "17894072000122",
+   "unidade": "PREFEITURA MUNICIPAL DE IBIRACI",
+   "objeto": "AQUISIÇÃO DE SACOS DE LIXO DESTINADOS A MANUTENÇÃO DO PAÇO MUNICIPAL, SECRETARIAS MUNICIPAIS E SERVIÇOS DE LIMPEZA URBANA DO MUNICÍPIO DE IBIRACI/MG.",
+   "modalidade": "Pregão - Eletrônico",
+   "modalidadeId": 6,
+   "modoDisputa": "Aberto",
+   "numeroCompra": "045/2026",
+   "processo": "000194/2026",
+   "valorEstimado": 307479.88,
+   "valorHomologado": null,
+   "publicacao": "2026-11-12T16:05:39",
+   "abertura": "2026-11-12T16:02:00",
+   "encerramento": "2026-11-27T08:30:00",
+   "atualizacao": "2026-11-12T16:05:39",
+   "situacao": "Divulgada no PNCP",
+   "srp": true,
+   "amparoLegal": "Lei 14.133/2021, Art. 28, I",
+   "linkOrigem": "https://www.slicx.com.br",
+   "urlPncp": "https://pncp.gov.br/app/editais/17894072000122/2026/58",
+   "ano": 2026,
+   "sequencial": 58
+  },
   {
    "id": "47987136000109-1-000429/2026",
    "municipio": "Franca",
@@ -6025,34 +6053,6 @@
    "urlPncp": "https://pncp.gov.br/app/editais/46374500000194/2026/8428",
    "ano": 2026,
    "sequencial": 8428
-  },
-  {
-   "id": "47987136000109-1-000377/2026",
-   "municipio": "Franca",
-   "ibge": "3516200",
-   "uf": "SP",
-   "orgao": "CENTRO UNIVERSITARIO MUNICIPAL DE FRANCA",
-   "cnpj": "47987136000109",
-   "unidade": "CENTRO UNIVERSITARIO DE FRANCA",
-   "objeto": "AQUISIÇÃO DE RAMAL SEM FIO INTELBRAS PARA ATENDIMENTO NO AMBULATÓRIO",
-   "modalidade": "Dispensa",
-   "modalidadeId": 8,
-   "modoDisputa": "Dispensa Com Disputa",
-   "numeroCompra": "00275",
-   "processo": "00378/2026",
-   "valorEstimado": 216.33,
-   "valorHomologado": null,
-   "publicacao": "2026-10-07T14:02:03",
-   "abertura": "2026-10-07T13:18:45",
-   "encerramento": "2026-10-13T16:00:54",
-   "atualizacao": "2026-10-07T14:02:03",
-   "situacao": "Divulgada no PNCP",
-   "srp": false,
-   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
-   "linkOrigem": null,
-   "urlPncp": "https://pncp.gov.br/app/editais/47987136000109/2026/377",
-   "ano": 2026,
-   "sequencial": 377
   },
   {
    "id": "48031918000124-1-002761/2026",
