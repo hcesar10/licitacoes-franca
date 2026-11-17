@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-11-17T00:18:53-03:00",
+ "atualizadoEm": "2026-11-17T15:59:59-03:00",
  "ultimaColeta": {
   "de": "20261115",
   "ate": "20261117",
@@ -16,7 +16,7 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 160
+   "total": 161
   },
   {
    "nome": "Cristais Paulista",
@@ -62,6 +62,34 @@
   }
  ],
  "licitacoes": [
+  {
+   "id": "69122893000144-1-000160/2026",
+   "municipio": "Franca",
+   "ibge": "3516200",
+   "uf": "SP",
+   "orgao": "SECRETARIA DE DESENVOLVIMENTO SOCIAL",
+   "cnpj": "69122893000144",
+   "unidade": "ESP-DIVISÃO REG. DE ASSIST. SOCIAL - FRANCA",
+   "objeto": "Contratação de serviços de manutenção corretiva do PABX, reparo da fechadura elétrica do portão social e adequações nas instalações da DRADS\nFranca,",
+   "modalidade": "Dispensa",
+   "modalidadeId": 8,
+   "modoDisputa": "Não se aplica",
+   "numeroCompra": "17",
+   "processo": "012.00012014/2026-20",
+   "valorEstimado": 1585.0,
+   "valorHomologado": 1585.0,
+   "publicacao": "2026-11-17T09:49:51",
+   "abertura": null,
+   "encerramento": null,
+   "atualizacao": "2026-11-17T09:49:51",
+   "situacao": "Divulgada no PNCP",
+   "srp": false,
+   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
+   "linkOrigem": null,
+   "urlPncp": "https://pncp.gov.br/app/editais/69122893000144/2026/160",
+   "ano": 2026,
+   "sequencial": 160
+  },
   {
    "id": "45307980000108-1-000155/2026",
    "municipio": "Cristais Paulista",
