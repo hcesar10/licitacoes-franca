@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-11-21T14:13:51-03:00",
+ "atualizadoEm": "2026-11-21T21:48:33-03:00",
  "ultimaColeta": {
   "de": "20261119",
   "ate": "20261121",
@@ -16,7 +16,7 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 162
+   "total": 161
   },
   {
    "nome": "Cristais Paulista",
@@ -5381,34 +5381,6 @@
    "urlPncp": "https://pncp.gov.br/app/editais/17894056000130/2026/39",
    "ano": 2026,
    "sequencial": 39
-  },
-  {
-   "id": "47970769000104-1-000527/2026",
-   "municipio": "Franca",
-   "ibge": "3516200",
-   "uf": "SP",
-   "orgao": "MUNICIPIO DE FRANCA",
-   "cnpj": "47970769000104",
-   "unidade": "SECRETARIA MUN. DE EDUCAÇÃO",
-   "objeto": "CHAMADA PÚBLICA Nº 00005/2026 PARA AQUISIÇÃO DE ALIMENTOS (LARANJAS) DIRETAMENTE DA AGRICULTURA FAMILIAR E DO EMPREENDEDOR FAMILIAR RURAL, DESTINADOS AO ATENDIMENTO DO CARDÁPIO DA ALIMENTAÇÃO ESCOLAR, CONFORME AS DIRETRIZES ESTABELECIDAS PELO PROGRAMA NACIONAL DE ALIMENTAÇÃO ESCOLAR - PNAE.",
-   "modalidade": "Dispensa",
-   "modalidadeId": 8,
-   "modoDisputa": "Não se aplica",
-   "numeroCompra": "00075",
-   "processo": "15203/2026",
-   "valorEstimado": 97546.67,
-   "valorHomologado": null,
-   "publicacao": "2026-10-22T15:51:14",
-   "abertura": null,
-   "encerramento": null,
-   "atualizacao": "2026-10-22T15:51:14",
-   "situacao": "Divulgada no PNCP",
-   "srp": false,
-   "amparoLegal": "Lei 11.947/2009, Art. 14, § 1º",
-   "linkOrigem": null,
-   "urlPncp": "https://pncp.gov.br/app/editais/47970769000104/2026/527",
-   "ano": 2026,
-   "sequencial": 527
   },
   {
    "id": "45318581000142-1-000093/2026",
