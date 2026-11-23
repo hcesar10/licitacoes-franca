@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "2026-11-22T14:41:57-03:00",
+ "atualizadoEm": "2026-11-22T22:15:19-03:00",
  "ultimaColeta": {
   "de": "20261120",
   "ate": "20261122",
@@ -22,7 +22,7 @@
    "nome": "Cristais Paulista",
    "ibge": "3513207",
    "uf": "SP",
-   "total": 33
+   "total": 32
   },
   {
    "nome": "Claraval",
@@ -5101,34 +5101,6 @@
    "urlPncp": "https://pncp.gov.br/app/editais/46374500000194/2026/8950",
    "ano": 2026,
    "sequencial": 8950
-  },
-  {
-   "id": "45307980000108-1-000132/2026",
-   "municipio": "Cristais Paulista",
-   "ibge": "3513207",
-   "uf": "SP",
-   "orgao": "MUNICIPIO DE CRISTAIS PAULISTA",
-   "cnpj": "45307980000108",
-   "unidade": "ASSISTENCIA SOCIAL",
-   "objeto": "CONTRATAÇÃO DE PESSOA JURIDICA ESPECIALIZADA PARA PRESTAÇÃO DE SERVIÇO DE HOSPEDAGEM INTEGRAL, DESTINADA A IDOSO EM CARÁTER PERMANENTE OU TEMPORÁRIO, CONFORME TERMO DE REFERÊNCIA",
-   "modalidade": "Dispensa",
-   "modalidadeId": 8,
-   "modoDisputa": "Não se aplica",
-   "numeroCompra": "00061",
-   "processo": "50061/2026",
-   "valorEstimado": 64254.0,
-   "valorHomologado": null,
-   "publicacao": "2026-10-23T17:30:44",
-   "abertura": null,
-   "encerramento": null,
-   "atualizacao": "2026-10-23T17:30:44",
-   "situacao": "Divulgada no PNCP",
-   "srp": false,
-   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
-   "linkOrigem": null,
-   "urlPncp": "https://pncp.gov.br/app/editais/45307980000108/2026/132",
-   "ano": 2026,
-   "sequencial": 132
   },
   {
    "id": "47987136000109-1-000401/2026",
