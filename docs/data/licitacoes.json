@@ -1,13 +1,13 @@
 {
- "atualizadoEm": "2026-11-23T18:57:04-03:00",
+ "atualizadoEm": "2026-11-24T02:03:56-03:00",
  "ultimaColeta": {
-  "de": "20261121",
-  "ate": "20261123",
+  "de": "20261122",
+  "ate": "20261124",
   "modalidades": [
    6,
    8
   ],
-  "encontrados": 4,
+  "encontrados": 7,
   "falhas": []
  },
  "retencaoDias": 30,
@@ -16,13 +16,13 @@
    "nome": "Franca",
    "ibge": "3516200",
    "uf": "SP",
-   "total": 159
+   "total": 160
   },
   {
    "nome": "Cristais Paulista",
    "ibge": "3513207",
    "uf": "SP",
-   "total": 32
+   "total": 33
   },
   {
    "nome": "Claraval",
@@ -46,7 +46,7 @@
    "nome": "Itirapuã",
    "ibge": "3523701",
    "uf": "SP",
-   "total": 11
+   "total": 12
   },
   {
    "nome": "Ibiraci",
@@ -62,6 +62,90 @@
   }
  ],
  "licitacoes": [
+  {
+   "id": "45317955000105-1-000162/2026",
+   "municipio": "Itirapuã",
+   "ibge": "3523701",
+   "uf": "SP",
+   "orgao": "MUNICIPIO DE ITIRAPUA",
+   "cnpj": "45317955000105",
+   "unidade": "Prefeitura Municipal de Itirapuã",
+   "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA PARA A PRESTAÇÃO DE SERVIÇOS TÉCNICOS DE CONSULTORIA E ASSESSORIA A PREFEITURA MUNICIPAL DE ITIRAPUÃ NA CONDUÇÃO DO CHAMAMENTO PÚBLICO DESTINADO À CELEBRAÇÃO DE PARCERIA COM ORGANIZAÇÃO DA SOCIEDADE CIVIL (OSC)",
+   "modalidade": "Dispensa",
+   "modalidadeId": 8,
+   "modoDisputa": "Não se aplica",
+   "numeroCompra": "2581",
+   "processo": "2581/2026",
+   "valorEstimado": 8100.0,
+   "valorHomologado": 5500.0,
+   "publicacao": "2026-11-23T14:37:00",
+   "abertura": null,
+   "encerramento": null,
+   "atualizacao": "2026-11-23T14:37:00",
+   "situacao": "Divulgada no PNCP",
+   "srp": false,
+   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
+   "linkOrigem": null,
+   "urlPncp": "https://pncp.gov.br/app/editais/45317955000105/2026/162",
+   "ano": 2026,
+   "sequencial": 162
+  },
+  {
+   "id": "47970769000104-1-000600/2026",
+   "municipio": "Franca",
+   "ibge": "3516200",
+   "uf": "SP",
+   "orgao": "MUNICIPIO DE FRANCA",
+   "cnpj": "47970769000104",
+   "unidade": "Prefeitura Municipal de Franca",
+   "objeto": "[Portal de Compras Públicas] - AQUISIÇÃO DE CORTINAS DE VINIL PARA LEITOS HOSPITALARES INSTALADAS",
+   "modalidade": "Pregão - Eletrônico",
+   "modalidadeId": 6,
+   "modoDisputa": "Aberto",
+   "numeroCompra": "268",
+   "processo": "33281/2026",
+   "valorEstimado": 309863.4,
+   "valorHomologado": null,
+   "publicacao": "2026-11-23T12:33:43",
+   "abertura": "2026-11-24T08:00:00",
+   "encerramento": "2026-12-11T09:30:00",
+   "atualizacao": "2026-11-23T12:33:45",
+   "situacao": "Divulgada no PNCP",
+   "srp": true,
+   "amparoLegal": "Lei 14.133/2021, Art. 28, I",
+   "linkOrigem": "https://www.portaldecompraspublicas.com.br/processos/SP/Prefeitura-Municipal-de-Franca-4109/RPE-268-2026-2026-527021",
+   "urlPncp": "https://pncp.gov.br/app/editais/47970769000104/2026/600",
+   "ano": 2026,
+   "sequencial": 600
+  },
+  {
+   "id": "45307980000108-1-000164/2026",
+   "municipio": "Cristais Paulista",
+   "ibge": "3513207",
+   "uf": "SP",
+   "orgao": "MUNICIPIO DE CRISTAIS PAULISTA",
+   "cnpj": "45307980000108",
+   "unidade": "ASSISTÊNCIA MÉDICA",
+   "objeto": "CONTRATAÇÃO DE EMPRESA PARA O FORNECIMENTO DE EQUIPAMENTO VETERINÁRIO PERMANENTE, CONFORME EDITAL E SEUS ANEXOS.",
+   "modalidade": "Dispensa",
+   "modalidadeId": 8,
+   "modoDisputa": "Não se aplica",
+   "numeroCompra": "00075",
+   "processo": "5075/2026",
+   "valorEstimado": 10171.6,
+   "valorHomologado": null,
+   "publicacao": "2026-11-23T11:21:47",
+   "abertura": null,
+   "encerramento": null,
+   "atualizacao": "2026-11-23T11:21:47",
+   "situacao": "Divulgada no PNCP",
+   "srp": false,
+   "amparoLegal": "Lei 14.133/2021, Art. 75, II",
+   "linkOrigem": null,
+   "urlPncp": "https://pncp.gov.br/app/editais/45307980000108/2026/164",
+   "ano": 2026,
+   "sequencial": 164
+  },
   {
    "id": "47970769000104-1-000599/2026",
    "municipio": "Franca",
